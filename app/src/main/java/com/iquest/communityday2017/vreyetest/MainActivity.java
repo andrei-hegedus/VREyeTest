@@ -20,6 +20,7 @@ public class MainActivity extends Activity {
         vrEyeTestView = (VREyeTestView) findViewById(R.id.pano_view);
         vrEyeTestView.setEventListener(new ActivityEventListener());
         vrEyeTestView.setEyeTest(VREyeTestView.EyeTest.STEREO_EYE_TEST);
+
     }
 
 
