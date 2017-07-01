@@ -24,5 +24,6 @@ model {
 
 dependencies {
     compile 'com.google.vr:sdk-panowidget:1.60.1'
+    testCompile 'junit:junit:4.12'
 }
 

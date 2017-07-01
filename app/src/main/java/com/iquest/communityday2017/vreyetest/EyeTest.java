@@ -7,7 +7,7 @@ package com.iquest.communityday2017.vreyetest;
 public class EyeTest {
 
     // http://www.dizziness-and-balance.com/practice/images/equipment/die%20chart.2.gif
-    private char[][] tests;
+    private char[][] tests = new char [10][];
 
     {
         tests[0] = new char[]{'F', 'P'};
@@ -32,5 +32,20 @@ public class EyeTest {
 
     public String getRowAsString(int nr){
         return new String(getRow(nr));
+    }
+
+    public int verify(String row, int rowNr){
+        row = row.trim().replace(" ", "");
+        String actualRow = getRowAsString(rowNr);
+        if(row.length() > actualRow.length()){
+            return 0;
+        }
+        int correct = 0;
+        for(int i = 0; i < row.length();i++){
+            if(actualRow.charAt(i)==row.charAt(i)){
+                correct++;
+            }
+        }
+        return correct * 100 / actualRow.length();
     }
 }
