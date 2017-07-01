@@ -35,7 +35,7 @@ public class EyeTest {
     }
 
     public int verify(String row, int rowNr){
-        row = row.trim().replace(" ", "");
+        row = row.trim().replace(" ", "").toUpperCase();
         String actualRow = getRowAsString(rowNr);
         if(row.length() > actualRow.length()){
             return 0;
