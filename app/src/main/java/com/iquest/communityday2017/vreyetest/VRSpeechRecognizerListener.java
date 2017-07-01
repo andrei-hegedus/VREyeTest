@@ -1,4 +1,4 @@
-com.iquest.communityday2017.vreyetest;
+package com.iquest.communityday2017.vreyetest;
 
 /**
  * Created by robert.fejer on 7/1/17.
