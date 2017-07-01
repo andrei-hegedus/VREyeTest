@@ -7,7 +7,7 @@ model {
 
         defaultConfig {
             applicationId "com.iquest.communityday2017.vreyetest"
-            minSdkVersion.apiLevel 19
+            minSdkVersion.apiLevel 21
             targetSdkVersion.apiLevel 22
             versionCode 1
             versionName "1.0"
