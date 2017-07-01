@@ -16,7 +16,8 @@
       configuration.
     -->
     <application
-        android:label="SimpleVrPanoramaActivity"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/title"
         android:largeHeap="true"
         android:theme="@android:style/Theme.Holo.Light">
         <!-- This demo is singleTask since it makes launching via custom adb intents easier. -->
